@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno Store</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300..800&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="module" src="./js/controller.js" data-route="./js/controller.js"></script>
+    
+    <script defer type="module" src="js/router.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col third">
+              <ul class="support">
+                <li><a href="">Support</a></li>
+                <li><a href="">Store Locator</a></li>
+                <li><a href="">Track Your Order</a></li>
+              </ul>
+            </div>
+            <div class="col third">
+              <ul class="support-number">
+                <li class="phone">Call Us:<a> (888) 1234 56789</a></li>
+              </ul>
+            </div>
+            <div class="col third">
+              <ul class="information">
+                <li class="account">
+                  <a href="#" title="">My Account</a>
+                </li>
+                <li>
+                  <a href="#" title=""
+                    >USD<i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                  <ul class="hidden-list">
+                    <li>
+                      <a href="#" title="">Euro</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Dolar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" title=""
+                    >English<i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                  <ul class="hidden-list">
+                    <li>
+                      <a href="#" title="">Turkish</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">English</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">اللغة العربية</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Español</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Italiano</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mid-header">
+        <div class="container">
+          <div class="row">
+            <div class="col quarter">
+              <div class="logo">
+                <a href="#index.html"
+                  ><img src="./images/logo.png" alt="logo"
+                /></a>
+              </div>
+            </div>
+            <div class="col half">
+              <div class="search">
+                <form method="get" class="form-search">
+                  <div class="box-search">
+                    <input
+                      type="text"
+                      name="search"
+                      id="search-input"
+                      placeholder="Search what you looking for ?"
+                    />
+                    <span class="search-btn">
+                      <button type="submit" id ="search-btn">
+                        <img src="./images/search (1).png" alt="" />
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col quarter">
+              <!-- <div class="user-buttons"> -->
+              <div class="button">
+                <a href="/compare">
+                  <img src="./images/compare.png" alt="" />
+                </a>
+              </div>
+              <div class="button">
+                <a href="/wishlist">
+                  <img src="./images/wishlist.png" alt="" />
+                </a>
+              </div>
+              <div class="button">
+                <a href="/cart">
+                  <img src="./images/cart.png" alt="" />
+                </a>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="bottom-header">
+          <div class="container">
+            <div class="row">
+              <div class="col quarter">
+                <div class="giga-menu">
+                  <div class="btn-category">
+                    <span class="burger-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>All Categories</span>
+                  </div>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="#">Laptops & Mac</a>
+                      <div class="mega-menu">
+                        <div class="first-col">
+                          <!-- Add content for first column -->
+                        </div>
+                        <div class="second-col">
+                          <!-- Add content for second column -->
+                        </div>
+                        <div class="third-col">
+                          <!-- Add content for third column -->
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Mobile & Tablet</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Home Devices</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Software</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">TV & Audio</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Sports & Fitness</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Games & Toys</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Video Cameras</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Accessories</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Security</a>
+                      <div class="mega-menu">
+                        <div class="first-col"></div>
+                        <div class="second-col"></div>
+                        <div class="third-col"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="col quarter"><div class="brand-circle">TS</div></div> -->
+              <div class="col three-fourth">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/shop">Shop</a></li>
+                </ul>
+                <div class="today-deals">
+                  <a href="#slide-deals">Today Deals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="alert">
+      <i class="fa-solid fa-circle-check"></i>
+      <p>Product Added</p>
+    </div>
+    <div id="content">
+      <section class="main-slide">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+            </div>
+            <div class="swiper-pagination"></div>
+
+            
+          </div>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="container">
+          <div class="wrapper">
+            <div class="card1">
+              <img src="./images/home-01.jpg" alt="">
+            </div>
+            <div class="card2">
+              <img src="./images/home-05.jpg" alt="">
+            </div>
+            <div class="tall-card">
+              <img src="./images/home-03.jpg" alt="">
+            </div>
+            <div class="fat-card">
+              <img src="./images/home-04.jpg" alt="">
+            </div>
+          </div>
+          <div class="best-items">
+            <div class="small-nav">
+              <ul class="tabs">
+                <li class="tab-active"><button class="tab" id="new">New Arrivals</button></li>
+                <li><button class="tab" id="feature">Featured</button></li>
+                <li><button class="tab" id="top">Top Selling</button></li>
+              </ul>
+            </div>
+            <div class="items-container">
+              
+              <!-- item render -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category-tabs">
+        <div class="container">
+          <div class="best-items">
+            <div class="small-nav">
+              <ul class="tabs">
+                <li class="tab-active"><button class="tab" id="smartphones">Smartphones</button></li>
+                <li><button class="tab" id="accessories">Accessories</button></li>
+                <li><button class="tab" id="laptops">Laptops</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="items-wrapper grid-1">
+            <!-- item rendered -->
+          </div>
+        </div>
+      </section>
+      <section class="slide-deals" id = "slide-deals">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="most-viewed">
+        <div class="container">
+          <div class="best-items">
+            <div class="small-nav">
+              <ul class="tabs">
+                <li ><p>Most Viewed</p></li>
+              </ul>
+            </div>
+          </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                  <!-- item rendered -->
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="service-wrapper">
+            <div class="service-block">
+              <div class="button">
+                <a>
+                  <img src="./images/car.png" alt="" />
+                </a>
+              </div>
+              <div class="service-details">
+                <p>Worldwide Shipping</p>
+                <p>Free Shipping On Order Over $100</p>
+              </div>
+            </div>
+            <div class="service-block">
+              <div class="button">
+                <a>
+                  <img src="./images/order.png" alt="" />
+                </a>
+              </div>
+              <div class="service-details">
+                <p>Order Online Service</p>
+                <p>Free return products in 30 days</p>
+              </div>
+            </div>
+            <div class="service-block">
+              <div class="button">
+                <a>
+                  <img src="./images/payment.png" alt="" />
+                </a>
+              </div>
+              <div class="service-details">
+                <p>Payment</p>
+                <p>Secure System</p>
+              </div>
+            </div>
+            <div class="service-block">
+              <div class="button">
+                <a>
+                  <img src="./images/return.png" alt="" />
+                </a>
+              </div>
+              <div class="service-details">
+                <p>Return 30 Days</p>
+                <p>Free return products in 30 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="site-info ">
+            <div class="logo">
+              <a href="#index.html"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <div class="call-us">
+              <div class="phone-img">
+                <img src="./images/call.png" alt="">
+              </div>
+              <div class="phone-text">
+                <span>Got Questions ? Call us 24/7!</span>
+                <p>Call Us: (888) 1234 56789</p>
+                <pre>PO Box CT16122 Collins Street 
+West, Victoria 8007,
+Australia.</pre>
+              </div>
+            </div>
+            <div class="social-media-icons">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+          <div class="categories-info">
+            <div class="fisrt-cat">
+              <div class="title">
+                <p>Find By Categories</p>
+              </div>
+              <div class="category-list">
+                <ul>
+                  <li><a href="#">Desktops</a></li>
+                  <li><a href="#">Laptops & Notebooks</a></li>
+                  <li><a href="#">Components</a></li>
+                  <li><a href="#">Tablets</a></li>
+                  <li><a href="#">Software</a></li>
+                  <li><a href="#">Phones & PDAs</a></li>
+                  <li><a href="#">Cameras</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="seconde-cat"><div class="title">
+              <p>Customer Care</p>
+            </div>
+            <div class="category-list">
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+            </div>
+            
+          </div>          
+          <div class="subscribtion-info">
+            <div class="title">
+              <p>Sign Up To New Letter</p>
+            </div>
+            <div class="text">
+              <p>
+                Make sure that you never miss our interesting
+                news by joining our newsletter prog
+              </p>
+            <div class="subscribe">
+                <form action="">
+                  <input type="text"
+                  name="email"
+                  placeholder="Your E-mail">
+                  <span>
+                    <button type="submit">
+                      <img src="./images/right-2.png" alt="">
+                    </button>
+                  </span>
+                </form>
+              </div>
+              
+                <div class="transaction-list">
+                  <ul>
+                    <li><a href=""><img src="./images/ft-01.png"></a></li>
+                    <li><a href=""><img src="./images/ft-02.png"></a></li>
+                    <li><a href=""><img src="./images/ft-03.png"></a></li>
+                    <li><a href=""><img src="./images/ft-04.png"></a></li>
+                    <li><a href=""><img src="./images/ft-05.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-section">
+              <div class="title">
+                <p>Mobile Apps</p>
+              </div>
+              <div class="download-links">
+                <div class="button rect">
+                  <a>
+                    <img src="./images/app-store.png" alt="" />
+                    <div class="text">
+                      <p>App Store</p>
+                      <p>Avaliable now on the</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="button rect">
+                  <a>
+                    <img src="./images/google-play.png" alt="" />
+                    <div class="text">
+                      <p>Google Play</p>
+                      <p>Get it on</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="copyright-section">
+        <div class="container">
+          <div class="row">
+            <p>All Rights Reserved &copy; Eid Osama 2024</p>
+            <button>
+              <a href="">
+                <img src="./images/top.png" alt="">
+              </a>
+            </button>
+            </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
